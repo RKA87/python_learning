@@ -328,3 +328,45 @@ def power_charges(no_units):
         consumption03(no_units)
 
 power_charges(no_units)
+
+#print the input string in reverse order using functions
+def reversestring(stringiput):
+    
+    s1=stringiput
+    s2=""
+    x=len(s1)-1
+
+    for i in range(x,-1,-1):
+        s2=s2+s1[i]
+    print("Reverse String:", s2)
+
+reversestring("Hello World")
+
+'''    
+Given two strings, s1 and s2. Write a program to create a new string s3 made of the first char of s1, then the last char of s2, 
+Next, the second char of s1 and second last char of s2, and so on. Any leftover chars go at the end of the result, use Python Functions
+'''
+def new_string_output(s1_input, s2_input):
+    s1 = s1_input
+    s2 = s2_input
+    s3 = ""
+
+    x=len(s1)
+    y=len(s2)
+
+    if x>y:
+        variable1=(s1[y:])
+        match_string = s1[0:y]
+        for i in range(len(match_string)):
+            s3=s3+match_string[i]
+            s3=s3+s2[-i-1]
+        print("New String Output:", s3+variable1)
+    else:
+        variable2=(s2[x:])
+        match_string = s2[0:x]
+        for i in range(len(s1)):
+            s3=s3+s1[i]
+            s3=s3+match_string[-i-1]
+        print("New String Output:", s3+variable2)
+
+new_string_output("Hello", "Rakesh")
