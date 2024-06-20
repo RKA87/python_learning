@@ -53,4 +53,3 @@ x=[]
 #     if tot_journey < 13:
 #         count +=1
 #         print(count)
-

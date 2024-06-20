@@ -369,4 +369,4 @@ def new_string_output(s1_input, s2_input):
             s3=s3+match_string[-i-1]
         print("New String Output:", s3+variable2)
 
-new_string_output("Hello", "Rakesh")
+new_string_output("suji", "Rakesh")
