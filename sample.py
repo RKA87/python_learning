@@ -53,3 +53,37 @@ x=[]
 #     if tot_journey < 13:
 #         count +=1
 #         print(count)
+
+# Write a program to display the total count of Oranges in the following shopping cart using **kwargs.
+
+# Cart = {
+# “Oranges” : 20,
+# “Apples” : 30,
+# “Pears” : 21,
+# “Oranges” : 30,
+# “Mangoes” : 40,
+# “Berries” : 20,
+# “Oranges” : 60
+# }
+
+# def count_of_oranges(**kwargs):
+
+#     cart = kwargs
+
+#     for x in cart:
+
+cart = {
+    "Apples" : 30, 
+    "Pears" : 21, 
+    "Oranges" : 30, 
+    "Mangoes" : 40, 
+    "Berries" : 20, 
+    "Oranges" : 60
+    }
+
+print(cart["Apples"])
+print(cart.get("Apples"))
+x=(cart.items())
+
+for x,y in cart.items():
+    print(x,y)
