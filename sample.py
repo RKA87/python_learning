@@ -34,7 +34,7 @@
 #     break_charge_input = int(input("Enter break charges in mts:"))
 #     total_break_charges = (break_charges*break_charge_input)
 
-x=[]
+# x=[]
 # for i in range(2,11,2):
 #     x.append(i)
 
@@ -54,36 +54,70 @@ x=[]
 #         count +=1
 #         print(count)
 
-# Write a program to display the total count of Oranges in the following shopping cart using **kwargs.
+'''
+Task 3:
 
-# Cart = {
-# “Oranges” : 20,
-# “Apples” : 30,
-# “Pears” : 21,
-# “Oranges” : 30,
-# “Mangoes” : 40,
-# “Berries” : 20,
-# “Oranges” : 60
+Write a program to calculate the fare for each station from the given data.
+Fare is calculated using the formulate distance * cost. 
+The cost is given in an an array like so 200, 350, 55, 724, 120
+The distance for each station is given in the dictionary below
+{
+“Delhi" : 650,
+“Kolkata" : 700,
+“Mumbai" : 625,
+“Chennai" : 400,
+“Pune" : 600
+}
+
+Use *args and **kwargs as function parameters
+'''
+# cost_list =[200,350,55,724,120]
+
+# distance={
+#     "Delhi": 650,
+#     "Kolkata": 700,
+#     "Mumbai": 625,
+#     "Chennai": 400,
+#     "Pune": 600
 # }
 
-# def count_of_oranges(**kwargs):
+# empty_list = []
 
-#     cart = kwargs
+# for val in distance.values():
+#     empty_list.append(val)
 
-#     for x in cart:
+# distance_cost_result=[]
 
-cart = {
-    "Apples" : 30, 
-    "Pears" : 21, 
-    "Oranges" : 30, 
-    "Mangoes" : 40, 
-    "Berries" : 20, 
-    "Oranges" : 60
-    }
+# for i in range(0,len(cost_list)):
+#     x= empty_list[i]*cost_list[i]
+#     distance_cost_result.append(x)
+# print(distance_cost_result)
 
-print(cart["Apples"])
-print(cart.get("Apples"))
-x=(cart.items())
+# x=[]
+# for key in distance.keys():
+#     x.append(key)
 
-for x,y in cart.items():
-    print(x,y)
+# final_result_dictionary={}
+# for i in range(len(x)):
+#     final_result_dictionary[x[i]]=distance_cost_result[i]
+
+# print(final_result_dictionary)
+
+# Task 9
+
+# Write a program to calculate the sum of a list of numbers using recursion.
+
+
+# number = 100
+
+
+
+
+'''
+Write a Python program to get the sum of a non-negative integer using recursion.
+digits_sum(345) -> 12
+digits_sum(45) -> 9
+
+'''
+
+
