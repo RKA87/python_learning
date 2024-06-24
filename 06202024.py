@@ -270,6 +270,7 @@ while i<=100:
     print(sum)
     i+=1
     print(i)
+
 '''
 Write a Python program to calculate the value of 'a' to the power of 'b' using recursion.
 Test Data :
@@ -296,4 +297,51 @@ def power(x,y):
         return z
 
 x=power(4,5)
+print(x)
+
+'''
+Write a Python program to get the sum of a non-negative integer using recursion.
+digits_sum(345) -> 12
+digits_sum(45) -> 9
+
+'''
+
+def digits_sum(n):
+    input_string = n
+    result = 0
+    x=len(n) #8 integer
+    if x==0:
+        return 0
+    else:
+        result = result+int(input_string[x-1])+digits_sum(input_string[0:x-1])
+        return result
+
+y=digits_sum("5")
+print(y)
+
+'''
+Task 11
+
+Write a program to calculate the sum of harmonic series upto n terms.
+Note: The harmonic sum is the sum of reciprocals of the positive integers.
+Example :
+
+1+1/2+1/3+1/4+1/5+
+
+'''
+#case 1
+sum = 0
+for i in range(1,4):
+    sum = sum + 1/i
+print(sum)
+
+#case 2
+def harmonicseries(n):
+
+    if n==1:
+        return 1
+    else:
+        return (1/n)+ harmonicseries(n - 1)
+
+x=harmonicseries(3)
 print(x)

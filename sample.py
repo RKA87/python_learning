@@ -112,12 +112,3 @@ Use *args and **kwargs as function parameters
 
 
 
-
-'''
-Write a Python program to get the sum of a non-negative integer using recursion.
-digits_sum(345) -> 12
-digits_sum(45) -> 9
-
-'''
-
-
