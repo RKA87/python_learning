@@ -184,3 +184,28 @@ print("Modified values (add ten):", modified_values_add_ten)  # Output: [13, 55,
 
 modified_values_double = apply_function_to_parameters(double, *parameters)
 print("Modified Double Values:", modified_values_double) #output: [6, 90, 12, 18, 20, 68]
+
+
+'''
+Using Nested Functions
+'''
+# case 1
+def outside():
+    def inside(base,exponential):
+        power = base **exponential
+        return power
+    return inside
+
+variable= outside()
+output = variable(2,3)
+print(output)
+
+# case 2
+def func01():
+    def add(a,b):
+        return a+b
+    return add
+
+x=func01()
+result = x(2,3)
+print(result)

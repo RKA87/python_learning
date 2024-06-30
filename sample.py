@@ -122,14 +122,36 @@ Use *args and **kwargs as function parameters
 # print(compute(times, 2,2))
 
 
-def power_function():
-    def calculate_power(x,y):
-        return x**y
-    return calculate_power
+# def power_function():
+#     def calculate_power(x,y):
+#         return x**y
+#     return calculate_power
 
-result = power_function()
-print(result(3,3))
+# result = power_function()
+# print(result(3,3))
 
+#case
+def fun02(arg4):
+    return arg4
+
+def fun01(fn,*args):
+    return fn(*args)
+
+x=[2,3,4]
+testing = fun01(fun02,x) #fun02(x)
+
+#case create an inner function to calcuate the addition
+
+
+
+
+def name(name,age):
+    print(name, age)
+
+name("rakesh", 27)
+
+new_name= name
+new_name("suji", 33)
 
 
 
